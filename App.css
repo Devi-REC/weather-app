@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images.hdqwalls.com/download/to-the-sky-qu-1336x768.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes logoAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.App {
+  width: 100%; /* Adjust width as needed */
+  max-width: 700px;
+  height: auto; /* Auto height to adjust based on content */
+  margin: 10vh auto; /* Center the container vertically */
+  background-size: cover;
+  box-shadow: 0.5px 6px 17px 0.75px rgba(23, 15, 243, 0.738);
+  border-radius: 10px;
+  padding: 20px; /* Add padding for better spacing */
+  animation: logoAnimation 0.3s infinite;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  width: calc(100% - 16px); /* Adjust the width considering padding */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: pink;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: calc(100% - 16px); /* Adjust the width considering padding */
+  box-sizing: border-box; /* Include padding and border in the width */
+  margin-top: 10px; /* Add some spacing between input and button */
+}
+
+p {
+  margin: 8px 0;
+}
+
+p.error {
+  color: red;
+}
